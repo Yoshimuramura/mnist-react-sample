@@ -1,0 +1,27 @@
+.practice{
+    background-color: rgb(194, 255, 212);
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+}
+
+.contents{
+    width: 100%;
+    text-align: center;
+}
+.box1{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 75%;
+    text-align: left;
+}
+
+.checker{
+    text-align: center;
+}
+
+.checker span{
+    color:coral;
+}

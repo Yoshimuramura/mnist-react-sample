@@ -1,25 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import {Practice} from './Components/Practice';
 
-function App() {
+const Home =()=> {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          MNiST React 練習ページ
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
+          href="/practice"
           rel="noopener noreferrer"
         >
-          Learn React
+          Start
         </a>
       </header>
     </div>
   );
 }
+
+const App = () => {
+  return (
+    <div>
+      <BrowserRouter>
+      <Routes>
+          <Route path="/" element={Home()} />
+          <Route path="/practice" element={Practice()} />
+          </Routes>
+      </BrowserRouter>
+      </div>
+  );
+};
 
 export default App;
